@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a25b070e61f3c8478f1004ba3367186, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: ColorMatch.Presentation::ColorMatch.Presentation.Config.GameConfig
+  _palette: {fileID: 0}
+  _levelDuration: 60
+  _basketColorInterval: 3
+  _pointsPerMatch: 10
+  _penaltyPerMismatch: 5
+  _clampScoreToZero: 1
+  _startFallSpeed: 2.5
+  _endFallSpeed: 6
+  _startSpawnInterval: 1.2
+  _endSpawnInterval: 0.45
+  _rampDuration: 60
+  _shapes: 00000000010000000200000003000000

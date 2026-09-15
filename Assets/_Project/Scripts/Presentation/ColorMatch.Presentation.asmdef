@@ -1,0 +1,14 @@
+{
+    "name": "ColorMatch.Presentation",
+    "rootNamespace": "ColorMatch.Presentation",
+    "references": [ "ColorMatch.Core" ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
