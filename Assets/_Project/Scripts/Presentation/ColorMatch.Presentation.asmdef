@@ -1,7 +1,7 @@
 {
     "name": "ColorMatch.Presentation",
     "rootNamespace": "ColorMatch.Presentation",
-    "references": [ "ColorMatch.Core" ],
+    "references": [ "ColorMatch.Core", "VContainer" ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
