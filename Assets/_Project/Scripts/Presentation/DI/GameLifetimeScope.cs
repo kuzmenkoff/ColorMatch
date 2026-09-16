@@ -4,6 +4,7 @@ using ColorMatch.Core.Storage;
 using ColorMatch.Presentation.Config;
 using ColorMatch.Presentation.Gameplay;
 using ColorMatch.Presentation.Services;
+using ColorMatch.Presentation.UI;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -59,9 +60,11 @@ namespace ColorMatch.Presentation.DI
             builder.Register<GameSession>(Lifetime.Singleton);
 
             // Inject the scene MonoBehaviours that depend on the session.
-            builder.RegisterComponentInHierarchy<GameLoopDriver>();
             builder.RegisterComponentInHierarchy<BasketView>();
             builder.RegisterComponentInHierarchy<FigureSpawner>();
+            builder.RegisterComponentInHierarchy<GameFlowController>();
+            builder.RegisterComponentInHierarchy<UIController>();
+            builder.RegisterComponentInHierarchy<BasketFeedback>();
         }
     }
 }

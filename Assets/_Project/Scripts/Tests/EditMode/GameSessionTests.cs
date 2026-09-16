@@ -74,5 +74,22 @@ namespace ColorMatch.Tests
             session.ReportCatch(FigureColor.Red); // ignored
             Assert.AreEqual(10, session.Score);
         }
+
+        [Test]
+        public void ReportCatch_RaisesFigureCaught_WithMatchResult()
+        {
+            var session = Make(new FakeHighScoreStorage());
+            session.Start(); // basket color = Red
+
+            var results = new System.Collections.Generic.List<bool>();
+            session.FigureCaught += results.Add;
+
+            session.ReportCatch(FigureColor.Red);  // matched
+            session.ReportCatch(FigureColor.Blue); // mismatched
+
+            Assert.AreEqual(2, results.Count);
+            Assert.IsTrue(results[0]);
+            Assert.IsFalse(results[1]);
+        }
     }
 }

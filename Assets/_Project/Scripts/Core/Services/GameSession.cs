@@ -28,6 +28,8 @@ namespace ColorMatch.Core.Services
         public event Action<float> TimeChanged;
         public event Action<FigureColor> BasketColorChanged;
         public event Action<FigureSpawnRequest> FigureRequested;
+        /// <summary>Raised on each catch: true if the figure matched the basket.</summary>
+        public event Action<bool> FigureCaught;
 
         /// <summary>Raised when the session ends, carrying the final result.</summary>
         public event Action<SessionResult> Ended;
@@ -80,6 +82,7 @@ namespace ColorMatch.Core.Services
 
             bool matched = ColorMatchRules.IsMatch(_basket.CurrentColor, figureColor);
             _score.ApplyCatch(matched);
+            FigureCaught?.Invoke(matched);
         }
 
         private void End()
