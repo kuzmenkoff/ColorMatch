@@ -2,6 +2,7 @@ using ColorMatch.Core.Services;
 using ColorMatch.Core.StateMachine;
 using ColorMatch.Core.Storage;
 using ColorMatch.Presentation.Config;
+using ColorMatch.Presentation.Gameplay;
 using ColorMatch.Presentation.Services;
 using UnityEngine;
 using VContainer;
@@ -56,6 +57,11 @@ namespace ColorMatch.Presentation.DI
             // Aggregate session; every dependency is registered above, so
             // VContainer resolves its constructor automatically.
             builder.Register<GameSession>(Lifetime.Singleton);
+
+            // Inject the scene MonoBehaviours that depend on the session.
+            builder.RegisterComponentInHierarchy<GameLoopDriver>();
+            builder.RegisterComponentInHierarchy<BasketView>();
+            builder.RegisterComponentInHierarchy<FigureSpawner>();
         }
     }
 }

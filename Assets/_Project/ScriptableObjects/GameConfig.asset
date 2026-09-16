@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a25b070e61f3c8478f1004ba3367186, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: ColorMatch.Presentation::ColorMatch.Presentation.Config.GameConfig
-  _palette: {fileID: 0}
+  _palette: {fileID: 11400000, guid: 03d68b32956dd144faa95b2bde16d0ec, type: 2}
   _levelDuration: 60
   _basketColorInterval: 3
   _pointsPerMatch: 10

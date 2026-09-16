@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColorMatch.Presentation::ColorMatch.Presentation.Config.ColorPalette
   _entries:
   - Color: 0
-    Rgba: {r: 1, g: 0, b: 0, a: 0}
+    Rgba: {r: 1, g: 0, b: 0, a: 1}
   - Color: 1
-    Rgba: {r: 0, g: 1, b: 0, a: 0}
+    Rgba: {r: 0, g: 1, b: 0, a: 1}
   - Color: 2
-    Rgba: {r: 0, g: 0, b: 1, a: 0}
+    Rgba: {r: 0, g: 0, b: 1, a: 1}
   - Color: 3
-    Rgba: {r: 1, g: 1, b: 0, a: 0}
+    Rgba: {r: 1, g: 1, b: 0, a: 1}
